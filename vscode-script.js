@@ -1,16 +1,19 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener("DOMContentLoaded", function () {
     const checkElement = setInterval(() => {
         const commandDialog = document.querySelector(".quick-input-widget");
         if (commandDialog) {
-          // Apply the blur effect immediately if the command dialog is visible
-          if (commandDialog.style.display !== "none") {
-            runMyScript();
-          }
+            // Apply the blur effect immediately if the command dialog is visible
+            if (commandDialog.style.display !== "none") {
+                runMyScript();
+            }
             // Create an DOM observer to 'listen' for changes in element's attribute.
             const observer = new MutationObserver((mutations) => {
                 mutations.forEach((mutation) => {
-                    if (mutation.type === 'attributes' && mutation.attributeName === 'style') {
-                        if (commandDialog.style.display === 'none') {
+                    if (
+                        mutation.type === "attributes" &&
+                        mutation.attributeName === "style"
+                    ) {
+                        if (commandDialog.style.display === "none") {
                             handleEscape();
                         } else {
                             // If the .quick-input-widget element (command palette) is in the DOM
@@ -31,22 +34,26 @@ document.addEventListener('DOMContentLoaded', function() {
     }, 500); // Check every 500ms
 
     // Execute when command palette was launched.
-    document.addEventListener('keydown', function(event) {
-        if ((event.metaKey || event.ctrlKey) && event.key === 'p') {
+    document.addEventListener("keydown", function (event) {
+        if ((event.metaKey || event.ctrlKey) && event.key === "p") {
             event.preventDefault();
             runMyScript();
-        } else if (event.key === 'Escape' || event.key === 'Esc') {
+        } else if (event.key === "Escape" || event.key === "Esc") {
             event.preventDefault();
             handleEscape();
         }
     });
 
     // Ensure the escape key event listener is at the document level
-    document.addEventListener('keydown', function(event) {
-        if (event.key === 'Escape' || event.key === 'Esc') {
-            handleEscape();
-        }
-    }, true);
+    document.addEventListener(
+        "keydown",
+        function (event) {
+            if (event.key === "Escape" || event.key === "Esc") {
+                handleEscape();
+            }
+        },
+        true,
+    );
 
     function runMyScript() {
         const targetDiv = document.querySelector(".monaco-workbench");
@@ -57,9 +64,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
         // Create and configure the new element
         const newElement = document.createElement("div");
-        newElement.setAttribute('id', 'command-blur');
+        newElement.setAttribute("id", "command-blur");
 
-        newElement.addEventListener('click', function() {
+        newElement.addEventListener("click", function () {
             newElement.remove();
         });
 
@@ -73,7 +80,9 @@ document.addEventListener('DOMContentLoaded', function() {
         });
 
         // Hide the tree sticky widget
-        const treeWidget = document.querySelector(".monaco-tree-sticky-container");
+        const treeWidget = document.querySelector(
+            ".monaco-tree-sticky-container",
+        );
         treeWidget && (treeWidget.style.opacity = 0);
     }
 
@@ -89,7 +98,9 @@ document.addEventListener('DOMContentLoaded', function() {
         });
 
         // Show the tree sticky widget
-        const treeWidget = document.querySelector(".monaco-tree-sticky-container");
+        const treeWidget = document.querySelector(
+            ".monaco-tree-sticky-container",
+        );
         treeWidget && (treeWidget.style.opacity = 1);
     }
 });

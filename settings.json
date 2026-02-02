@@ -1,167 +1,192 @@
-
 // WORKBENCH / UI APPEARANCE
 {
-"workbench.colorTheme": "One Dark Pro",
-"workbench.iconTheme": "material-icon-theme",
-"workbench.startupEditor": "none",
-"workbench.tips.enabled": false,
-"workbench.statusBar.visible": false,
-"workbench.tree.indent": 15,
-"workbench.tree.enableStickyScroll": false,
-"window.newWindowDimensions": "inherit",
-"workbench.activityBar.location": "top",
+    "workbench.colorTheme": "One Dark Pro",
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.startupEditor": "none",
+    "workbench.tips.enabled": false,
+    "workbench.statusBar.visible": false,
+    "workbench.tree.indent": 15,
+    "workbench.tree.enableStickyScroll": false,
+    "window.newWindowDimensions": "inherit",
+    "workbench.activityBar.location": "top",
 
-// EDITOR – GENERAL
-"editor.fontFamily": "Geist Mono, JetBrains Mono, Fira Code",
-"editor.fontSize": 16,
-"editor.fontWeight": "400",
-"editor.fontLigatures": "'ss01', 'ss02', 'ss03', 'ss04', 'ss05', 'ss06', 'ss07', 'ss08', 'calt', 'dlig'",
-"editor.lineNumbers": "off",
-"editor.minimap.enabled": false,
-"editor.minimap.maxColumn": 250,
-"editor.padding.top": 16,
-"editor.wordWrap": "wordWrapColumn",
-"editor.wordWrapColumn": 120,
-"editor.guides.indentation": false,
-"editor.renderLineHighlight": "none",
-"editor.renderControlCharacters": false,
-"editor.overviewRulerBorder": false,
-"editor.hideCursorInOverviewRuler": true,
-"editor.accessibilitySupport": "off",
+    // EDITOR – GENERAL
+    "editor.fontFamily": "Geist Mono, JetBrains Mono, Fira Code",
+    "editor.fontSize": 16,
+    "editor.fontWeight": "400",
+    "editor.fontLigatures": "'ss01', 'ss02', 'ss03', 'ss04', 'ss05', 'ss06', 'ss07', 'ss08', 'calt', 'dlig'",
+    "editor.lineNumbers": "off",
+    "editor.minimap.enabled": false,
+    "editor.minimap.maxColumn": 250,
+    "editor.padding.top": 16,
+    "editor.wordWrap": "wordWrapColumn",
+    "editor.wordWrapColumn": 120,
+    "editor.guides.indentation": false,
+    "editor.renderLineHighlight": "none",
+    "editor.renderControlCharacters": false,
+    "editor.overviewRulerBorder": false,
+    "editor.hideCursorInOverviewRuler": true,
+    "editor.accessibilitySupport": "off",
 
-// EDITOR – BEHAVIOR
-"editor.detectIndentation": false,
-"editor.copyWithSyntaxHighlighting": false,
-"editor.emptySelectionClipboard": false,
-"editor.multiCursorModifier": "ctrlCmd",
-"editor.matchBrackets": "never",
-"editor.selectionHighlight": false,
-"editor.occurrencesHighlight": "off",
-"editor.lightbulb.enabled": "off",
-"editor.hover.enabled": "on",
-"editor.hover.delay": 1500,
-"editor.quickSuggestions": {
-    "strings": true
-},
-"editor.gotoLocation.multipleDeclarations": "goto",
-"editor.gotoLocation.multipleDefinitions": "goto",
-"editor.gotoLocation.multipleImplementations": "goto",
-"editor.gotoLocation.multipleReferences": "goto",
-"editor.gotoLocation.multipleTypeDefinitions": "goto",
-"editor.inlineSuggest.suppressSuggestions": true,
-"editor.linkedEditing": true,
-"editor.stickyScroll.enabled": false,
+    // EDITOR – BEHAVIOR
+    "editor.detectIndentation": false,
+    "editor.copyWithSyntaxHighlighting": false,
+    "editor.emptySelectionClipboard": false,
+    "editor.multiCursorModifier": "ctrlCmd",
+    "editor.lightbulb.enabled": "off",
+    "editor.hover.enabled": "on",
+    "editor.hover.delay": 1500,
+    "editor.quickSuggestions": {
+        "strings": true
+    },
+    "editor.gotoLocation.multipleDeclarations": "goto",
+    "editor.gotoLocation.multipleDefinitions": "goto",
+    "editor.gotoLocation.multipleImplementations": "goto",
+    "editor.gotoLocation.multipleReferences": "goto",
+    "editor.gotoLocation.multipleTypeDefinitions": "goto",
+    "editor.inlineSuggest.suppressSuggestions": true,
+    "editor.linkedEditing": true,
+    "editor.stickyScroll.enabled": false,
 
-// FORMATTING
-"editor.formatOnSave": false,
-"prettier.requireConfig": true,
-"prettier.useEditorConfig": false,
-"prettier.tabWidth": 4,
-"vetur.format.options.tabSize": 4,
+    // FORMATTING
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true,
+    "editor.formatOnType": false,
+    "prettier.useEditorConfig": false,
+    "prettier.tabWidth": 4,
+    "prettier.requireConfig": false,
+    "prettier.singleQuote": true,
+    "prettier.semi": true,
+    "prettier.trailingComma": "all",
 
-// FILES
-"files.autoSave": "afterDelay",
-"files.trimTrailingWhitespace": true,
-"files.insertFinalNewline": true,
-"files.trimFinalNewlines": true,
+    // FILES
+    "files.autoSave": "afterDelay",
+    "files.trimTrailingWhitespace": true,
+    "files.insertFinalNewline": true,
+    "files.trimFinalNewlines": true,
 
-// SEARCH
-"search.useIgnoreFiles": false,
-"search.exclude": {
-    "**/vendor/{[^l],?[^ai]}*": true,
-    "**/public/{[^i],?[^n]}*": true,
-    "**/node_modules": true,
-    "**/dist": true,
-    "**/_ide_helper.php": true,
-    "**/composer.lock": true,
-    "**/package-lock.json": true,
-    "storage": true,
-    ".phpunit.result.cache": true
-},
+    // SEARCH
+    "search.useIgnoreFiles": false,
+    "search.exclude": {
+        "**/vendor/{[^l],?[^ai]}*": true,
+        "**/public/{[^i],?[^n]}*": true,
+        "**/node_modules": true,
+        "**/dist": true,
+        "**/_ide_helper.php": true,
+        "**/composer.lock": true,
+        "**/package-lock.json": true,
+        "storage": true,
+        ".phpunit.result.cache": true
+    },
 
-// DIFF / SCM / GIT
-"diffEditor.ignoreTrimWhitespace": false,
-"diffEditor.renderSideBySide": false,
-"diffEditor.wordWrap": "on",
-"scm.diffDecorations": "none",
-"git.decorations.enabled": false,
+    // DIFF / SCM / GIT
+    "diffEditor.ignoreTrimWhitespace": false,
+    "diffEditor.renderSideBySide": false,
+    "diffEditor.wordWrap": "on",
+    "scm.diffDecorations": "none",
+    "git.decorations.enabled": false,
 
-// BREADCRUMBS / PROBLEMS
-"breadcrumbs.enabled": false,
-"problems.decorations.enabled": false,
+    // BREADCRUMBS / PROBLEMS
+    "breadcrumbs.enabled": false,
+    "problems.decorations.enabled": false,
 
-// TERMINAL
-"terminal.integrated.fontSize": 16,
-"terminal.integrated.lineHeight": 1.5,
+    // TERMINAL
+    "terminal.integrated.fontSize": 16,
+    "terminal.integrated.lineHeight": 1.5,
 
-// TOKEN / COLOR CUSTOMIZATION
-"editor.tokenColorCustomizations": {
-    "textMateRules": [
-        {
-            "scope": [
-                "comment",
-                "keyword",
-                "variable.language",
-                "entity.other.attribute-name.html",
-                "entity.other.attribute-name",
-                "keyword.control",
-                "storage.type",
-                "comment.block",
-                "comment.line"
-            ],
-            "settings": {
-                "fontStyle": ""
+    // TOKEN / COLOR CUSTOMIZATION
+    "editor.tokenColorCustomizations": {
+        "textMateRules": [
+            {
+                "scope": [
+                    "comment",
+                    "keyword",
+                    "variable.language",
+                    "entity.other.attribute-name.html",
+                    "entity.other.attribute-name",
+                    "keyword.control",
+                    "storage.type",
+                    "comment.block",
+                    "comment.line"
+                ],
+                "settings": {
+                    "fontStyle": ""
+                }
             }
+        ]
+    },
+
+    // LANGUAGE FORMATTERS
+
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[javascriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[vue]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[tailwindcss]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[css]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[scss]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[jsonc]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+
+    // SECURITY / TRUST
+    "security.workspace.trust.untrustedFiles": "open",
+
+    // CUSTOM CSS / JS
+    "vscode_custom_css.imports": [
+        "file:///C:/Users/Name/Documents/Documents/vscode-setup/vscode-styles.css",
+        "file:///C:/Users/Name/Documents/Documents/vscode-setup/vscode-script.js"
+    ],
+
+    // EXPLORER
+    "explorer.sortOrder": "type",
+    "explorer.confirmDelete": false,
+    "chat.instructionsFilesLocations": {
+        ".github/instructions": true,
+        "C:\\Users\\Name~1\\AppData\\Local\\Temp\\postman-collections-post-response.instructions.md": true,
+        "C:\\Users\\Name~1\\AppData\\Local\\Temp\\postman-collections-pre-request.instructions.md": true,
+        "C:\\Users\\Name~1\\AppData\\Local\\Temp\\postman-folder-post-response.instructions.md": true,
+        "C:\\Users\\Name~1\\AppData\\Local\\Temp\\postman-folder-pre-request.instructions.md": true,
+        "C:\\Users\\Name~1\\AppData\\Local\\Temp\\postman-http-request-post-response.instructions.md": true,
+        "C:\\Users\\Name~1\\AppData\\Local\\Temp\\postman-http-request-pre-request.instructions.md": true
+    },
+    "terminal.integrated.profiles.windows": {
+        "PowerShell": {
+            "source": "PowerShell",
+            "icon": "terminal-powershell"
+        },
+        "Command Prompt": {
+            "path": "C:\\WINDOWS\\System32\\cmd.exe",
+            "args": []
+        },
+        "Git Bash": {
+            "source": "Git Bash",
+            "icon": "terminal-git-bash"
         }
-    ]
-},
-
-// LANGUAGE FORMATTERS
-"[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.formatOnSave": true
-},
-"[javascriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.formatOnSave": true
-},
-"[typescriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.formatOnSave": true
-},
-"[tailwindcss]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.formatOnSave": true
-},
-"[vue]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.formatOnSave": true
-},
-"[css]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.formatOnSave": true
-},
-"[html]": {
-    "editor.defaultFormatter": "vscode.html-language-features",
-    "editor.formatOnSave": true
-},
-"[json]": {
-    "editor.defaultFormatter": "vscode.json-language-features"
-},
-"[jsonc]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-},
-
-// SECURITY / TRUST
-"security.workspace.trust.untrustedFiles": "open",
-
-// CUSTOM CSS / JS
-"vscode_custom_css.imports": [
-    "file:///C:/Users/Name/Documents/Documents/vscode-setup/vscode-styles.css",
-    "file:///C:/Users/Name/Documents/Documents/vscode-setup/vscode-script.js"
-],
-
-// EXPLORER
-"explorer.sortOrder": "type",
-"explorer.confirmDelete": false
+    },
+    "terminal.integrated.defaultProfile.windows": "Command Prompt"
 }
